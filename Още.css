@@ -1,0 +1,127 @@
+body {
+  background: url("background/background mama website.jpg") no-repeat;
+  background-color: grey;
+  background-blend-mode: multiply;
+  width: 100%;
+  margin: 0;
+  font-family:  sans-serif;
+  scroll-behavior: smooth;
+  height: 100%;
+  padding: 0;
+} 
+
+header {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 0;
+  width: 100%;
+  height: 5vh;
+} 
+    
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dropdown button */
+.dropdown-button {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(57, 190, 247) 0%, rgb(163, 84, 253) 56%);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: solid 0.4vh;
+  border-color: rgb(189, 189, 189);
+  cursor: pointer;
+  border-radius: 1vh;
+  margin-right: 1vh;
+  text-decoration: none;
+}
+
+.education {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(57, 190, 247) 0%, rgb(163, 84, 253) 56%);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: solid 0.4vh;
+  border-color: rgb(189, 189, 189);
+  cursor: pointer;
+  border-radius: 1vh;
+  margin-right: 1vh;
+  text-decoration: none;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-align: center;
+  background-color: #6199ff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 1vh;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 1vh 1vh;
+  margin-top: 1vh;
+  text-decoration: none;
+  display: block;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(125,215,255,1) 0%, rgba(191,134,255,1) 56%);
+  border-radius: 1vh;
+}
+
+
+.dropdown-content a:hover {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(150,223,255,1) 0%, rgba(185,126,252,1) 56%);
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.nested-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #6199ff;
+  min-width: 240px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 0;
+  left: 100%;
+}
+
+#activen {
+  background-color: #00a2ff;
+}
+.dropdown-content a:nth-child(2):hover + .nested-dropdown,
+.nested-dropdown:hover {
+  display: block;
+}
+
+::-webkit-scrollbar-track
+  {
+      background-color: rgb(255 255 255 / 10%);
+  }
+    
+::-webkit-scrollbar
+  {
+      width: 15px;
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,121,175,1) 0%, rgba(0,50,172,1) 100%);
+  }
+    
+::-webkit-scrollbar-thumb
+  {
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,176,255,1) 0%, rgba(0,74,255,1) 100%);
+  }
